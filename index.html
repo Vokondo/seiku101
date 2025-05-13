@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RawSource - Premium Commodities for Manufacturing Industries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <!-- Replace Inter font with Garet font -->
+    <style>
+        @font-face {
+            font-family: 'Garet';
+            src: url('https://cdn.jsdelivr.net/gh/vercel/satori@v0.6.1/fonts/garet-book.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Garet';
+            src: url('https://cdn.jsdelivr.net/gh/vercel/satori@v0.6.1/fonts/garet-heavy.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Garet', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(90deg, #1a202c 0%, #2d3748 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #4299e1 0%, #9f7aea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-up:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Mobile menu styles */
+        .mobile-menu {
+            display: none;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <span class="font-bold text-2xl text-blue-700">seiku</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#products" class="font-medium hover:text-blue-600 transition">Products</a>
+                <a href="#solutions" class="font-medium hover:text-blue-600 transition">Solutions</a>
+                <a href="#logistics" class="font-medium hover:text-blue-600 transition">Logistics</a>
+                <a href="#about" class="font-medium hover:text-blue-600 transition">About Us</a>
+                <a href="#contact" class="font-medium hover:text-blue-600 transition">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium transition">Request Quote</a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (added functionality) -->
+        <div id="mobile-menu" class="mobile-menu bg-white w-full py-4 shadow-lg">
+            <div class="container mx-auto px-4 flex flex-col space-y-4">
+                <a href="#products" class="font-medium hover:text-blue-600 transition py-2 border-b border-gray-100">Products</a>
+                <a href="#solutions" class="font-medium hover:text-blue-600 transition py-2 border-b border-gray-100">Solutions</a>
+                <a href="#logistics" class="font-medium hover:text-blue-600 transition py-2 border-b border-gray-100">Logistics</a>
+                <a href="#about" class="font-medium hover:text-blue-600 transition py-2 border-b border-gray-100">About Us</a>
+                <a href="#contact" class="font-medium hover:text-blue-600 transition py-2 border-b border-gray-100">Contact</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium transition text-center mt-2">Request Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Premium Raw Materials for Manufacturing Excellence</h1>
+                    <p class="text-lg md:text-xl mb-8 text-gray-200">Supplying high-grade commodities to drive your production with reliability, quality, and precision.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium text-center transition">Explore Products</a>
+                        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-md font-medium text-center transition">Contact Sales</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-2 rounded-lg shadow-2xl">
+                        <!-- Added real image to replace placeholder -->
+                        <img src="images/1366_2000.jpg" alt="Raw materials and manufacturing supplies" class="rounded-md w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="bg-white py-10">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-center text-gray-500 text-lg mb-8">TRUSTED BY LEADING MANUFACTURERS</h2>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+                <!-- Logo placeholders -->
+                <div class="w-32 h-12 bg-gray-100 rounded-md flex items-center justify-center">
+                    <span class="text-gray-500 font-semibold">COMPANY A</span>
+                </div>
+                <div class="w-32 h-12 bg-gray-100 rounded-md flex items-center justify-center">
+                    <span class="text-gray-500 font-semibold">COMPANY B</span>
+                </div>
+                <div class="w-32 h-12 bg-gray-100 rounded-md flex items-center justify-center">
+                    <span class="text-gray-500 font-semibold">COMPANY C</span>
+                </div>
+                <div class="w-32 h-12 bg-gray-100 rounded-md flex items-center justify-center">
+                    <span class="text-gray-500 font-semibold">COMPANY D</span>
+                </div>
+                <div class="w-32 h-12 bg-gray-100 rounded-md flex items-center justify-center">
+                    <span class="text-gray-500 font-semibold">COMPANY E</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold">OUR COMMODITIES</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Premium Raw Materials Portfolio</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Discover our extensive range of high-quality raw materials, meticulously sourced and rigorously tested to meet your manufacturing needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Category 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover-up transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-fire text-5xl text-blue-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Metals & Alloys</h3>
+                        <p class="text-gray-600 mb-4">Premium steel, aluminum, copper, and specialty alloys for engineering and manufacturing applications.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Category 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover-up transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-flask text-5xl text-green-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Polymers & Resins</h3>
+                        <p class="text-gray-600 mb-4">High-grade thermoplastics, thermosets, and specialty polymers for diverse manufacturing applications.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Category 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover-up transition duration-300">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-atom text-5xl text-purple-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Industrial Chemicals</h3>
+                        <p class="text-gray-600 mb-4">Essential chemicals and compounds for production processes, treatments, and industrial applications.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Category 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover-up transition duration-300">
+                    <div class="h-48 bg-yellow-100 flex items-center justify-center">
+                        <i class="fas fa-drum text-5xl text-yellow-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Petroleum Products</h3>
+                        <p class="text-gray-600 mb-4">Refined petroleum products, lubricants, and specialized oils for industrial machinery and processes.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Category 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover-up transition duration-300">
+                    <div class="h-48 bg-red-100 flex items-center justify-center">
+                        <i class="fas fa-cubes text-5xl text-red-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Composite Materials</h3>
+                        <p class="text-gray-600 mb-4">Advanced composite solutions combining multiple materials for enhanced performance characteristics.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Category 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover-up transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-solar-panel text-5xl text-indigo-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Electronic Materials</h3>
+                        <p class="text-gray-600 mb-4">Specialized materials for electronic component manufacturing, circuitry, and semiconductor production.</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold">OUR ADVANTAGES</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Why Manufacturing Leaders Trust Us</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">From rigorous quality control to flexible supply solutions, we optimize your material sourcing for maximum operational efficiency.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Advantage 1 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Quality Assurance</h3>
+                    <p class="text-gray-600">Rigorous testing protocols and comprehensive certification for every batch of materials.</p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-truck-loading text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Supply Reliability</h3>
+                    <p class="text-gray-600">Strategic inventory management and diverse supply networks to ensure consistent availability.</p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-dollar-sign text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Competitive Pricing</h3>
+                    <p class="text-gray-600">Volume-based pricing models and efficient procurement strategies to optimize your costs.</p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Expert Consultation</h3>
+                    <p class="text-gray-600">Industry specialists to help you select the optimal materials for your manufacturing processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Solutions -->
+    <section id="solutions" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-400 font-semibold">TAILORED SOLUTIONS</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Industry-Specific Material Solutions</h2>
+                <p class="max-w-2xl mx-auto text-gray-300">We understand the unique requirements of different manufacturing sectors and provide specialized commodity solutions to meet your specific needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Industry 1 -->
+                <div class="bg-gray-800 rounded-lg p-8 hover-up transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Automotive Manufacturing</h3>
+                    <p class="text-gray-300 mb-4">Specialized metals, polymers, and composites formulated for automotive production demands.</p>
+                    <ul class="text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> High-strength automotive-grade steel</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Lightweight aluminum alloys</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Specialized rubber compounds</li>
+                    </ul>
+                    <a href="#" class="text-blue-400 font-medium flex items-center">
+                        Explore solutions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Industry 2 -->
+                <div class="bg-gray-800 rounded-lg p-8 hover-up transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Electronics & Technology</h3>
+                    <p class="text-gray-300 mb-4">Ultra-pure materials and specialized compounds for electronic component production.</p>
+                    <ul class="text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Semiconductor-grade silicon</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Conductive metals and alloys</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Specialized insulating materials</li>
+                    </ul>
+                    <a href="#" class="text-blue-400 font-medium flex items-center">
+                        Explore solutions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Industry 3 -->
+                <div class="bg-gray-800 rounded-lg p-8 hover-up transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Pharmaceutical & Medical</h3>
+                    <p class="text-gray-300 mb-4">USP/EP grade materials for pharmaceutical manufacturing and medical devices.</p>
+                    <ul class="text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> USP-grade chemical compounds</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Medical-grade polymers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Biocompatible materials</li>
+                    </ul>
+                    <a href="#" class="text-blue-400 font-medium flex items-center">
+                        Explore solutions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Industry 4 -->
+                <div class="bg-gray-800 rounded-lg p-8 hover-up transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Construction & Infrastructure</h3>
+                    <p class="text-gray-300 mb-4">Durable and high-performance materials for construction applications.</p>
+                    <ul class="text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Structural steel and alloys</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Specialized cement additives</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Advanced insulation materials</li>
+                    </ul>
+                    <a href="#" class="text-blue-400 font-medium flex items-center">
+                        Explore solutions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Industry 5 -->
+                <div class="bg-gray-800 rounded-lg p-8 hover-up transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Food & Beverage</h3>
+                    <p class="text-gray-300 mb-4">Food-grade materials and ingredients for food processing applications.</p>
+                    <ul class="text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Food-grade stainless steel</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> FDA-approved polymers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Process additives and compounds</li>
+                    </ul>
+                    <a href="#" class="text-blue-400 font-medium flex items-center">
+                        Explore solutions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Industry 6 -->
+                <div class="bg-gray-800 rounded-lg p-8 hover-up transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Aerospace & Defense</h3>
+                    <p class="text-gray-300 mb-4">Ultra-high performance materials meeting stringent industry specifications.</p>
+                    <ul class="text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Aerospace-grade titanium</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Advanced composite materials</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Specialized heat-resistant alloys</li>
+                    </ul>
+                    <a href="#" class="text-blue-400 font-medium flex items-center">
+                        Explore solutions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics Services -->
+    <section id="logistics" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold">SUPPLY CHAIN EXCELLENCE</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Integrated Logistics Solutions</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Our comprehensive logistics services ensure your raw materials arrive exactly when and where you need them.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6">Our Logistics Network</h3>
+                        <p class="text-gray-600 mb-6">From our strategically located distribution centers to our dedicated freight partners, we've built a robust logistics infrastructure designed for reliability and efficiency.</p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-warehouse text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Global Distribution Network</h4>
+                                    <p class="text-gray-600">12 strategic distribution centers across 4 continents ensuring global coverage and rapid response.</p>
+                                </div>
+                            </li>
+                            
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-shipping-fast text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Multi-Modal Transportation</h4>
+                                    <p class="text-gray-600">Sea, air, rail, and road freight options optimized for your timeline and budget requirements.</p>
+                                </div>
+                            </li>
+                            
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-2 mr-4 mt-1">
+                                    <i class="fas fa-user-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Just-In-Time Delivery</h4>
+                                    <p class="text-gray-600">Precision scheduling to align with your production cycles and minimize inventory costs.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium inline-block transition">Explore Logistics Options</a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+                        <h3 class="text-2xl font-bold mb-6">Supply Chain Management</h3>
+                        
+                        <div class="flex flex-col space-y-6 mb-8">
+                            <div class="rounded-lg bg-blue-50 p-4 flex">
+                                <div class="bg-blue-100 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Demand Planning</h4>
+                                    <p class="text-gray-600">Advanced forecasting tools to anticipate your material needs and optimize inventory levels.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rounded-lg bg-blue-50 p-4 flex">
+                                <div class="bg-blue-100 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-search-dollar text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Strategic Procurement</h4>
+                                    <p class="text-gray-600">Long-term supply agreements and volume-based pricing to stabilize costs and availability.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rounded-lg bg-blue-50 p-4 flex">
+                                <div class="bg-blue-100 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-sync-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">VMI & Consignment</h4>
+                                    <p class="text-gray-600">Vendor-managed inventory solutions to optimize your working capital and storage space.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rounded-lg bg-blue-50 p-4 flex">
+                                <div class="bg-blue-100 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                                    <i class="fas fa-satellite-dish text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Real-Time Tracking</h4>
+                                    <p class="text-gray-600">End-to-end visibility with our digital tracking platform from order to delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Download Supply Chain Brochure <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold">CLIENT EXPERIENCES</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">What Our Clients Say</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Hear from manufacturing leaders who have transformed their supply chains with our commodity solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"RawSource has revolutionized our procurement process. Their reliable delivery and consistent quality have eliminated production delays and improved our overall efficiency by 24%."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center mr-4">
+                            <span class="font-bold text-blue-700">JD</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">James Davidson</h4>
+                            <p class="text-gray-500">Operations Director, AutoTech Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Their technical expertise in advanced polymers helped us develop a new product line that's 30% lighter and 15% stronger than our previous materials allowed. Game-changing partnership."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center mr-4">
+                            <span class="font-bold text-green-700">SR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Rodriguez</h4>
+                            <p class="text-gray-500">Chief Innovation Officer, NextGen Electronics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Their VMI program has freed up 18% of our warehouse space and reduced our inventory holding costs by 22%. The real-time analytics dashboard gives us complete visibility of our supply chain."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-purple-200 flex items-center justify-center mr-4">
+                            <span class="font-bold text-purple-700">MT</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Thompson</h4>
+                            <p class="text-gray-500">Supply Chain Manager, Global Pharma Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-blue-700 text-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <p class="text-blue-100">Manufacturing Clients</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">35+</div>
+                    <p class="text-blue-100">Countries Served</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">98.7%</div>
+                    <p class="text-blue-100">On-Time Delivery</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">12,500+</div>
+                    <p class="text-blue-100">Products Supplied</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <span class="text-blue-600 font-semibold">OUR STORY</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Global Leaders in Manufacturing Supply</h2>
+                    <p class="text-gray-600 mb-4">For over two decades, RawSource has been at the forefront of the industrial commodities market, delivering premium materials to manufacturing leaders worldwide.</p>
+                    <p class="text-gray-600 mb-6">Our commitment to quality, innovation, and service excellence has earned us the trust of more than 500 manufacturing companies across 35 countries. We combine global sourcing capabilities with local expertise to provide tailored solutions for every industry we serve.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-globe-americas text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">Global Supply Network</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-certificate text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">ISO 9001:2015 Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-flask text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">R&D Partnership Program</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-leaf text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">Sustainability Commitment</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium inline-block mr-4 transition">Meet Our Team</a>
+                    <a href="#" class="text-gray-700 border border-gray-300 px-6 py-3 rounded-md font-medium inline-block hover:bg-gray-100 transition">Download Brochure</a>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-industry text-white text-6xl"></i>
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg h-40 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                            <i class="fas fa-recycle text-white text-4xl"></i>
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg h-40 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-microscope text-white text-4xl"></i>
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+                            <i class="fas fa-boxes text-white text-6xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-semibold">FREQUENTLY ASKED QUESTIONS</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Common Questions</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Find answers to the most frequently asked questions about our products and services.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button flex justify-between items-center w-full px-6 py-4 text-left focus:outline-none">
+                        <span class="font-semibold text-lg">What minimum order quantities do you require?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden">
+                        <p class="text-gray-600">Our minimum order quantities vary by product type and material grade. We offer flexible MOQ options for most standard materials and can accommodate smaller quantities for specialty items or trial orders. Contact our sales team for specific product requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button flex justify-between items-center w-full px-6 py-4 text-left focus:outline-none">
+                        <span class="font-semibold text-lg">How do you ensure material quality and consistency?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden">
+                        <p class="text-gray-600">Every batch of material undergoes rigorous testing in our ISO-certified laboratories. We provide comprehensive material certifications, including chemical composition, physical properties, and performance characteristics. Our quality management system ensures consistent material properties across all shipments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button flex justify-between items-center w-full px-6 py-4 text-left focus:outline-none">
+                        <span class="font-semibold text-lg">What are your typical lead times for delivery?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden">
+                        <p class="text-gray-600">Lead times vary by product type and delivery location. Standard materials from our inventory are typically available for shipment within 2-5 business days. For custom or specialty orders, lead times generally range from 2-4 weeks. We also offer expedited shipping options for urgent requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button flex justify-between items-center w-full px-6 py-4 text-left focus:outline-none">
+                        <span class="font-semibold text-lg">Do you offer customized material solutions?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden">
+                        <p class="text-gray-600">Yes, we specialize in developing customized material solutions to meet specific manufacturing requirements. Our technical team works closely with your engineers to understand your application needs and develop materials with the precise properties and characteristics required for your production processes.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button flex justify-between items-center w-full px-6 py-4 text-left focus:outline-none">
+                        <span class="font-semibold text-lg">What payment terms do you offer?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden">
+                        <p class="text-gray-600">We offer various payment options including net 30 terms for established clients, as well as letter of credit, wire transfer, and credit card payments. For new customers, we typically request payment in advance for initial orders. Volume-based discounts and long-term contract pricing are available for regular customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Optimize Your Material Supply?</h2>
+                <p class="text-xl text-blue-100 mb-8">Speak with our experts today and discover how we can enhance your manufacturing operations with premium commodity solutions.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-white text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-md font-medium text-center transition">Contact Sales Team</a>
+                    <a href="#" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 text-white px-8 py-3 rounded-md font-medium text-center transition">Request Material Samples</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <span class="text-blue-600 font-semibold">GET IN TOUCH</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Contact Our Experts</h2>
+                    <p class="text-gray-600 mb-8">Have questions about our products or services? Reach out to our team for personalized assistance with your manufacturing material needs.</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Headquarters</h4>
+                                <p class="text-gray-600">1250 Industrial Parkway, Chicago, IL 60601, USA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-phone-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Phone</h4>
+                                <p class="text-gray-600">+1 (800) 555-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Email</h4>
+                                <p class="text-gray-600">sales@rawsource.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Global Offices</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="font-medium">North America</p>
+                                <p class="text-gray-600">Chicago • Houston • Toronto</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">Europe</p>
+                                <p class="text-gray-600">Rotterdam • Frankfurt • Milan</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">Asia Pacific</p>
+                                <p class="text-gray-600">Singapore • Shanghai • Seoul</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">Middle East</p>
+                                <p class="text-gray-600">Dubai • Doha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-gray-700 font-medium mb-2">Company</label>
+                                    <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="industry" class="block text-gray-700 font-medium mb-2">Industry</label>
+                                <select id="industry" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                    <option>Select Your Industry</option>
+                                    <option>Automotive Manufacturing</option>
+                                    <option>Electronics & Technology</option>
+                                    <option>Pharmaceutical & Medical</option>
+                                    <option>Construction & Infrastructure</option>
+                                    <option>Food & Beverage</option>
+                                    <option>Aerospace & Defense</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            
+                            <div class="flex items-center mb-6">
+                                <input type="checkbox" id="subscribe" class="h-4 w-4 text-blue-600 rounded border-gray-300">
+                                <label for="subscribe" class="ml-2 text-gray-700">Subscribe to our newsletter for industry updates and material innovations</label>
+                            </div>
+                            
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition w-full">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-gray-800 text-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0 md:mr-8">
+                    <h3 class="font-bold text-2xl mb-2">Stay Informed</h3>
+                    <p class="text-gray-300">Subscribe to our newsletter for industry insights, material innovations, and supply chain strategies.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-md text-gray-800 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md font-medium transition whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">RawSource</h3>
+                    <p class="text-gray-400 mb-4">Premium commodities and raw materials for manufacturing excellence.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Metals & Alloys</a></li>
+                        <li><a href="#" class="hover:text-white transition">Polymers & Resins</a></li>
+                        <li><a href="#" class="hover:text-white transition">Industrial Chemicals</a></li>
+                        <li><a href="#" class="hover:text-white transition">Petroleum Products</a></li>
+                        <li><a href="#" class="hover:text-white transition">Composite Materials</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Solutions</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Supply Chain Management</a></li>
+                        <li><a href="#" class="hover:text-white transition">Logistics Services</a></li>
+                        <li><a href="#" class="hover:text-white transition">Vendor Managed Inventory</a></li>
+                        <li><a href="#" class="hover:text-white transition">Material Consulting</a></li>
+                        <li><a href="#" class="hover:text-white transition">Material Customization</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-white transition">News & Events</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-700 mb-6">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2023 RawSource Inc. All rights reserved.</p>
+                <div class="flex space-x-6 text-gray-400">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Change icon when menu is open
+                const icon = mobileMenuButton.querySelector('i');
+                if (mobileMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    const icon = mobileMenuButton.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+            
+            // FAQ accordion functionality
+            const faqButtons = document.querySelectorAll('.faq-button');
+            
+            faqButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle current FAQ item
+                    content.classList.toggle('hidden');
+                    
+                    if (content.classList.contains('hidden')) {
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    } else {
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
